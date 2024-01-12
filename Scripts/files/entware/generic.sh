@@ -38,7 +38,7 @@ URL=http://bin.entware.net/${ARCH}/installer
 wget $URL/opkg -T 10 -O /opt/bin/opkg
 if [ $? -ne 0 ]; then
   echo 'Warning: Trying another Entware repo...'
-  URL=https://mirrors.bfsu.edu.cn/entware/${ARCH}/installer
+  URL=http://mirrors.bfsu.edu.cn/entware/${ARCH}/installer
   wget $URL/opkg -O /opt/bin/opkg
 fi
 chmod 755 /opt/bin/opkg
